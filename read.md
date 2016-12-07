@@ -3,7 +3,7 @@
 
 * [Apache配置](http://jingyan.baidu.com/article/acf728fd437389f8e410a35f.html)
 ##演示地址
-###因为本地地址无法访问，所以切换到了sina SAE上
+####因为本地服务器的文件怎么让外网访问还没弄清楚，所以将代码放到了sina SAE上
 * [代码演示](http://5.lcdmx.applinzi.com/)
 
 ```
