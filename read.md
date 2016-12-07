@@ -1,9 +1,9 @@
-##apache下载
+
 * [Apache下载](http://zhinan.sogou.com/guide/detail/?id=1610018585)
-##Apache配置
+
 * [Apache配置](http://jingyan.baidu.com/article/acf728fd437389f8e410a35f.html)
 ##演示地址
-* [代码演示](http://localhost/16-12-07/)
+* [代码演示](http://5.lcdmx.applinzi.com/)
 
 ```
 //计数器
