@@ -6,38 +6,38 @@
 </head>
 <body>
 <script type="text/javascript">
-	//创建cookie
-	function addCookie(sName,sValue){
-		var expireDate = new Date();
-		expireDate.setDate(expireDate.getDate() + 1);
-		//escape()汉字转成unicode编码,toGMTString() 把日期对象转成字符串 
-		document.cookie = escape(sName) + '=' + escape(sValue) +';expires=' + expireDate.toGMTString();
-	}
-	//读取cookie
-	function getCookie(){
-		var showAllCookie = '';
-		if(document.cookie != ''){
-			var arrCookie = document.cookie.split(';');
-			var arrLength = arrCookie.length;
-			for (var i = 0; i < arrLength.length; i++){
-				showAllCookie += 'c_name:' + unescape(arrCookie[i].split('=')[0]) + 'c_value:' + unescape(arrCookie[i].split('=')[1]) + '<br>' 
-			}
-		return showAllCookie; 
-		}
-	}
-	//清除cookie
-	function removeCookie(){
-		if(document.cookie != '' && confirm('你想清理所有cookie吗？')){
-			var arrCookie = document.cookie.split(';');
-			var arrLength = arrCookie.length;
-			var expireDate = new Date();
-			expireDate.setDate(expireDate.getDate()-1);
-			for(var i=0; i<arrLength; i++){
-				var str = arrCookie[i].split('=')[0];
-				document.cookie = str+ '=' + ';expires=' + expireDate.toGMTString();
-			}
-		}
-	}
+	// //创建cookie
+	// function addCookie(sName,sValue){
+	// 	var expireDate = new Date();
+	// 	expireDate.setDate(expireDate.getDate() + 1);
+	// 	//escape()汉字转成unicode编码,toGMTString() 把日期对象转成字符串 
+	// 	document.cookie = escape(sName) + '=' + escape(sValue) +';expires=' + expireDate.toGMTString();
+	// }
+	// //读取cookie
+	// function getCookie(){
+	// 	var showAllCookie = '';
+	// 	if(document.cookie != ''){
+	// 		var arrCookie = document.cookie.split(';');
+	// 		var arrLength = arrCookie.length;
+	// 		for (var i = 0; i < arrLength.length; i++){
+	// 			showAllCookie += 'c_name:' + unescape(arrCookie[i].split('=')[0]) + 'c_value:' + unescape(arrCookie[i].split('=')[1]) + '<br>' 
+	// 		}
+	// 	return showAllCookie; 
+	// 	}
+	// }
+	// //清除cookie
+	// function removeCookie(){
+	// 	if(document.cookie != '' && confirm('你想清理所有cookie吗？')){
+	// 		var arrCookie = document.cookie.split(';');
+	// 		var arrLength = arrCookie.length;
+	// 		var expireDate = new Date();
+	// 		expireDate.setDate(expireDate.getDate()-1);
+	// 		for(var i=0; i<arrLength; i++){
+	// 			var str = arrCookie[i].split('=')[0];
+	// 			document.cookie = str+ '=' + ';expires=' + expireDate.toGMTString();
+	// 		}
+	// 	}
+	// }
 
 	//计数器
 	var cookieCount = {}; 
